@@ -1,0 +1,200 @@
+html {
+  scroll-behavior: smooth;
+  font-family: "Quicksand", serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #444;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(22, 22, 22);
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 4rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #444;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: block;
+  transition: all 0.2s ease-in-out;
+  border-radius: 4px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+.main-content {
+  background-color: rgba(129, 129, 129, 0.455);
+  backdrop-filter: blur(10px);
+  border-radius: 3rem;
+  padding: 2rem 4rem;
+  border: white 2px solid;
+  color: white;
+}
+
+.main-content img {
+  border-radius: 2rem;
+  border: white 2px solid;
+}
+
+.main-content h3 {
+  color: rgb(225, 225, 225);
+}
+
+
+.opening {
+  text-align: center;
+  padding: 11vh 0;
+  max-height: 100vh;
+  color: white;
+}
+
+#fakta-unik {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: white;
+  margin-top: 0.1rem;
+  padding-bottom: 1rem;
+}
+
+#agama-kapercayaan {
+  display: flex;
+}
+
+.opening img {
+  display: block;
+  margin: 0 auto;
+  max-width: 60%;
+  height: auto;
+  border-top-left-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+  border: white 2px solid;
+}
+
+.sejarah {
+  display: flex;
+}
+
+.sejarah img {
+  width: 30rem;;
+}
+
+.organisasi {
+  display: flex;
+}
+
+#ngaran-upacara img {
+  width: 30%;
+}
+
+.organisasi img {
+  width: 30rem;;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding-top: 10vh;
+  margin-top: -10vh;
+  max-height: 100vh;
+}
+
+article h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#fakta-unik {
+  
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  nav ul li {
+    text-align: center;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .opening img {
+    max-width: 100%;
+  }
+}
